@@ -1,7 +1,13 @@
 require 'helper'
 
 class TestTestingCelluloid < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  should "call ordinary method aginst bang" do
+    class MyActor
+      include Celluloid
+    end
+
+    actor = MyActor.new
+    mock(actor).my_method
+    actor.my_method!
   end
 end
