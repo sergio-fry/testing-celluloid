@@ -1,6 +1,28 @@
-= testing-celluloid
+= testing-celluloid gem
 
-Description goes here.
+== Synopsis
+
+I pretty difficult to deal with celluloid objects inside test. That's why I decided that we should have ability to extract "raw object" without starting Celluloid proxy.
+
+== Installation
+
+Add to your Your Gemfile:
+
+"testing-celluloid", :group => :test
+
+== Usage
+
+    class MyCelluloidActor
+      include Celluloid
+    end
+
+    MyCelluloidActor.new.class # Celluloid::ActorProxy
+    MyCelluloidActor.new_raw_object.class # MyCelluloidActor
+
+    actor = MyCelluloidActor.new
+    actor.class # Celluloid::ActorProxy
+    actor.raw_object # MyCelluloidActor
+
 
 == Contributing to testing-celluloid
  

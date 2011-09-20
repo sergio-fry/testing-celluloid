@@ -12,3 +12,8 @@ group :development do
   gem "rr"
   gem "shoulda", ">= 0"
 end
+
+group :development, :test do
+  gem "celluloid"
+end
+

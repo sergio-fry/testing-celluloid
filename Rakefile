@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/sergio-fry/testing-celluloid"
   gem.license = "MIT"
   gem.summary = %Q{Helper to test Celluloid objects}
-  gem.description = %Q{It makes all your celluloid objects to regular}
+  gem.description = %Q{Adds new_raw_object method to create objects without proxy}
   gem.email = "sergei.udalov@gmail.com"
   gem.authors = ["Sergei O. Udalov"]
   # dependencies defined in Gemfile

@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    celluloid (0.2.1)
     git (1.2.5)
     jeweler (1.6.4)
       bundler (~> 1.0)
@@ -16,6 +17,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.0)
+  celluloid
   jeweler (~> 1.6.4)
   rcov
   rr
