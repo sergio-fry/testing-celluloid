@@ -6,7 +6,7 @@ I pretty difficult to deal with celluloid objects inside test. That's why I deci
 
 == Installation
 
-Add to your Your Gemfile:
+Add to your Your Gemfile after "celluloid":
 
 "testing-celluloid", :group => :test
 
